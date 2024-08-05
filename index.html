@@ -16,7 +16,7 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-lg bg-danger-subtle" data-bs-theme="dark">
+        <nav class="navbar fixed-top navbar-expand-lg bg-danger-subtle" data-bs-theme="dark">
             <div class="container">
                 <a class="navbar-brand text-danger-emphasis" href="#">Diane</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -46,24 +46,29 @@
         </nav>
 
     </header>
-    <main>
-        <section id="presentacion" class="container col-xxl-8 px-4 py-5">
-            <div class="row flex-lg-row align-items-center g-5 py-5">
-                <div class="col-10 col-sm-8 col-lg-6">
-                    <img src="presentacion.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700"
-                        height="500" loading="lazy">
-                </div>
-                <div class="col-lg-6">
-                    <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Diane Alonso
-                    </h1>
-                    <p class="lead">Tengo 22 años y estudio ingeniería geofísica. Me apasiona explorar el mundo natural
-                        a través de la ciencia. En mi tiempo libre, disfruto ver series, leer y pintar, lo que me
-                        permite relajarme y ser creativa. También me encanta pasar tiempo con mis amigas, especialmente
-                        cuando vamos de brunch, disfrutando de buenos momentos juntas.</p>
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                        <button type="button"
-                            class="btn btn-danger btn-lg btn-outline-light px-4 me-md-2">Contáctame</button>
-                        <button type="button" class="btn btn-outline-danger btn-lg px-4">alonsodiane9@gmail.com</button>
+    <main class="pb-3">
+        <section id="presentacion" class="container-fluid">
+            <div class="container col-xxl-8 px-4 py-5">
+                <div class="row flex-lg-row align-items-center g-5 py-5">
+                    <div class="col-10 col-sm-8 col-lg-6">
+                        <img src="imagenes/WhatsApp Image 2024-08-04 at 7.20.39 PM.jpeg"
+                            class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="300" loading="lazy">
+                    </div>
+                    <div class="col-lg-6">
+                        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Diane Alonso
+                        </h1>
+                        <p class="lead">Tengo 22 años y estudio ingeniería geofísica. Me apasiona explorar el mundo
+                            natural
+                            a través de la ciencia. En mi tiempo libre, disfruto ver series, leer y pintar, lo que me
+                            permite relajarme y ser creativa. También me encanta pasar tiempo con mis amigas,
+                            especialmente
+                            cuando vamos de brunch, disfrutando de buenos momentos juntas.</p>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                            <button type="button"
+                                class="btn btn-danger btn-lg btn-outline-light px-4 me-md-2">Contáctame</button>
+                            <button type="button"
+                                class="btn btn-outline-danger btn-lg px-4">alonsodiane9@gmail.com</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -162,55 +167,34 @@
         </section>
 
 
-        <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
-                    aria-label="Slide 1" aria-current="true"></button>
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"
-                    class=""></button>
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"
-                    class=""></button>
-            </div>
+        <div id="myCarousel" class="carousel slide mb-6 carousel-fade carousel-dark" data-bs-theme="dark"
+            data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                        aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
-                    </svg>
-                    <div class="container">
-                        <div class="carousel-caption text-start">
-                            <h1>Example headline.</h1>
-                            <p class="opacity-75">Some representative placeholder content for the first slide of the
-                                carousel.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
-                        </div>
-                    </div>
+                    <article class="container text-center">
+                        <img class="rounded-3" src="imagenes/estratir.png" height="200px" alt="">
+                        <h3 class="my-3">Ángeles Vázquez Pérez Profesora de Estratigrafía</h3>
+                        <p>Tiene muy buenos apuntes cuando sale a campo y el trabajo en equipo se le da bien.</p>
+
+                    </article>
                 </div>
                 <div class="carousel-item">
-                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                        aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
-                    </svg>
-                    <div class="container">
-                        <div class="carousel-caption">
-                            <h1>Another example headline.</h1>
-                            <p>Some representative placeholder content for the second slide of the carousel.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
-                        </div>
-                    </div>
+                    <article class="container text-center">
+                        <img class="rounded-3" src="imagenes/Duplex1.png" height="200px" alt="">
+                        <h3 class="my-3">Marco Albán Profesor de Geología Estructural</h3>
+                        <p>Trabaja muy bien y se esfuerza mucho, su libreta de campo es muy buena y tiene cosas muy
+                            interesantes que aportar.</p>
+
+                    </article>
                 </div>
                 <div class="carousel-item">
-                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                        aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
-                    </svg>
-                    <div class="container">
-                        <div class="carousel-caption text-end">
-                            <h1>One more for good measure.</h1>
-                            <p>Some representative placeholder content for the third slide of this carousel.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
-                        </div>
-                    </div>
+                    <article class="container text-center">
+                        <img class="rounded-3" src="imagenes/topo.webp" height="200px" alt="">
+                        <h3 class="my-3">Alejandra Guzmán Profesora de Geodesia</h3>
+                        <p>Muy buen cuaderno de prácticas, se toma en serio el trabajo en campo y trabaja muy bien en
+                            equipo.</p>
+
+                    </article>
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
@@ -225,27 +209,34 @@
 
     </main>
 
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top" id="contactos">
-        <div class="col-md-4 d-flex align-items-center">
-            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-                <svg class="bi" width="30" height="24">
-                    <use xlink:href="#bootstrap"></use>
-                </svg>
-            </a>
-            <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Company, Inc</span>
-        </div>
-
-        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-            <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
-                        <use xlink:href="#twitter"></use>
-                    </svg></a></li>
-            <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
-                        <use xlink:href="#instagram"></use>
-                    </svg></a></li>
-            <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
-                        <use xlink:href="#facebook"></use>
-                    </svg></a></li>
+    <footer class="py-3 mt-5 bg-danger-subtle" id="contactos" data-bs-theme="dark">
+        <h5 class="text-center my-5 text-danger-emphasis">"Si lo puedes soñar lo puedes lograr" Walt Disney</h5>
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item">
+                <a href="https://github.com/elizabeth820" target="_blank" class="nav-link px-2">
+                    <i class="bi bi-github fs-4 text-danger-emphasis"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="https://www.instagram.com/elizabethaalonso/" target="_blank" class="nav-link px-2">
+                    <i class="bi bi-instagram fs-4 text-danger-emphasis"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="https://www.tiktok.com/@elizabethalonso08?_t=8obfIt0FhVm&_r=1" target="_blank"
+                    class="nav-link px-2">
+                    <i class="bi bi-tiktok fs-4 text-danger-emphasis"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="https://www.facebook.com/elizabeth.alonsosoto/" target="_blank" class="nav-link px-2">
+                    <i class="bi bi-facebook fs-4 text-danger-emphasis"></i>
+                </a>
+            </li>
         </ul>
+        <p class="text-center text-body-secondary text-danger-emphasis">
+            2024 Diane Elizabeth Alonso Soto, TECHNOLOCHICAS PRO
+        </p>
     </footer>
 
 

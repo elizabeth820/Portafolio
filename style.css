@@ -3,24 +3,31 @@
     display: flex;
     justify-content: start;
     align-items: center;
+    background-image: url('imagenes/back.avif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 #proyecto-1{
-    background-image: url('primer-intento.png');
+    background-image: url('imagenes/primer-intento.png');
 }
 #proyecto-2{
-    background-image: url('series-reseña.png');
+    background-image: url('imagenes/series-reseña.png');
 }
 #proyecto-3{
-    background-image: url('google-pirata.png');
+    background-image: url('imagenes/google-pirata.png');
 }
 .proyecto{
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
 }
-.tex-shadow-1{
-    text-shadow: -2px 0px 6px rgba(0, 0, 0, 1);
+.text-shadow-1{
+    text-shadow: -2px 2px 2px rgba(0, 0, 0, 1);
 }
 h3{
     color: #641e16;
+}
+h2{
+    color: #CD6155;
 }
