@@ -10,6 +10,10 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Homemade+Apple&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -18,7 +22,7 @@
     <header>
         <nav class="navbar fixed-top navbar-expand-lg bg-danger-subtle" data-bs-theme="dark">
             <div class="container">
-                <a class="navbar-brand text-danger-emphasis" href="#">Diane</a>
+                <a class="navbar-brand text-danger-emphasis" href="#">Diane Alonso</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -35,7 +39,7 @@
                             <a class="nav-link text-danger-emphasis" href="#proyectos">Proyectos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-danger-emphasis" href="#myCarousel">Testimonios</a>
+                            <a class="nav-link text-danger-emphasis" href="#testimonios">Testimonios</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-danger-emphasis" href="#contactos">Contactos</a>
@@ -46,7 +50,7 @@
         </nav>
 
     </header>
-    <main class="pb-3">
+    <main>
         <section id="presentacion" class="container-fluid">
             <div class="container col-xxl-8 px-4 py-5">
                 <div class="row flex-lg-row align-items-center g-5 py-5">
@@ -55,7 +59,9 @@
                             class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="300" loading="lazy">
                     </div>
                     <div class="col-lg-6">
-                        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Diane Alonso
+                        <h1 id="app"
+                            class="display-5 fw-bold text-danger-emphasis lh-1 mb-3 text-center calistoga-regular">Diane
+                            Alonso
                         </h1>
                         <p class="lead">Tengo 22 años y estudio ingeniería geofísica. Me apasiona explorar el mundo
                             natural
@@ -75,91 +81,39 @@
         </section>
 
 
-        <section id="habilidades" class="container px-4 py-5">
-            <!-- Titulo de mi seccion -->
-            <h2 class="pb-2 border-bottom text-center my-5">Habilidades</h2>
-            <!-- Contenedor de cartas -->
-            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-                <div class="feature col">
-                    <div
-                        class=" d-inline-flex align-items-center justify-content-center text-danger-emphasis bg-danger-subtle fs-2 py-2 px-3 rounded">
-                        <i class="bi bi-terminal-split"></i>
-                    </div>
-                    <h3 class="fs-2 text-body-emphasis my-2">Programación</h3>
-                    <p>Experiencia programando en Java, Arduino, C, Python, HTML, CSS.</p>
-                </div>
-                <div class="feature col">
-                    <div
-                        class=" d-inline-flex align-items-center justify-content-center text-danger-emphasis bg-danger-subtle fs-2 py-2 px-3 rounded">
-                        <i class="bi bi-person-heart"></i>
-                    </div>
-                    <h3 class="fs-2 text-body-emphasis my-2">Trabajo en equipo</h3>
-                    <p>Soy buena trabajando en equipo porque fomento la colaboración, aprovecho habilidades diversas,
-                        mejoro la comunicación y aumento la eficiencia creativa.</p>
-                </div>
-                <div class="feature col">
-                    <div
-                        class=" d-inline-flex align-items-center justify-content-center text-danger-emphasis bg-danger-subtle fs-2 py-2 px-3 rounded">
-                        <i class="bi bi-patch-check-fill"></i>
-                    </div>
-                    <h3 class="fs-2 text-body-emphasis my-2">Responsabilidad</h3>
-                    <p>Soy responsable porque cumplo mis compromisos, manejo bien el tiempo, mantengo la calidad en mi
-                        trabajo y soy confiable en cualquier tarea.</p>
-                </div>
-
-            </div>
-        </section>
-
-
-        <section id="proyectos" class="container px-4 py-5">
-            <h2 class="pb-2 border-bottom text-center my-5">Proyectos</h2>
-
-            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-                <div class="col">
-                    <div id="proyecto-1"
-                        class="proyecto card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
-                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Mi primer intento de página</h3>
-                            <ul class="d-flex list-unstyled mt-auto">
-                                <li class="d-flex align-items-center me-3">
-                                    <i class="bi bi-award-fill"></i>
-                                    <a href="https://astounding-fairy-376490.netlify.app" target="_blank"
-                                        class="ps-3">URL</a>
-                                </li>
-                            </ul>
+        <section id="habilidades" class="container-fluid">
+            <div class="container px-4 py-5">
+                <!-- Titulo de mi seccion -->
+                <h2 class="pb-2 border-bottom text-center homemade-apple-regular">Habilidades</h2>
+                <!-- Contenedor de cartas -->
+                <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                    <div class="feature col">
+                        <div
+                            class=" d-inline-flex align-items-center justify-content-center text-danger-emphasis bg-danger-subtle fs-2 py-2 px-3 rounded-5">
+                            <i class="bi bi-terminal-split"></i>
                         </div>
+                        <h3 class="fs-2 text-danger-emphasis my-2 calistoga-regular">Programación</h3>
+                        <p>Experiencia programando en Java, Arduino, C, Python, HTML, CSS.</p>
                     </div>
-
-                </div>
-                <div class="col">
-                    <div id="proyecto-2"
-                        class="proyecto card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
-                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Página de tema libre</h3>
-                            <ul class="d-flex list-unstyled mt-auto">
-                                <li class="d-flex align-items-center me-3">
-                                    <i class="bi bi-balloon-heart-fill"></i>
-                                    <a href="https://astonishing-pudding-c412ea.netlify.app/" target="_blank"
-                                        class="ps-3">URL</a>
-                                </li>
-                            </ul>
+                    <div class="feature col">
+                        <div
+                            class=" d-inline-flex align-items-center justify-content-center text-danger-emphasis bg-danger-subtle fs-2 py-2 px-3 rounded-5">
+                            <i class="bi bi-person-heart"></i>
                         </div>
+                        <h3 class="fs-2 text-danger-emphasis my-2 calistoga-regular">Trabajo en equipo</h3>
+                        <p>Soy buena trabajando en equipo porque fomento la colaboración, aprovecho habilidades
+                            diversas,
+                            mejoro la comunicación y aumento la eficiencia creativa.</p>
                     </div>
-
-                </div>
-                <div class="col">
-                    <div id="proyecto-3"
-                        class="proyecto card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
-                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Clon de Google</h3>
-                            <ul class="d-flex list-unstyled mt-auto">
-                                <li class="d-flex align-items-center me-3">
-                                    <i class="bi bi-google"></i>
-                                    <a href="https://preeminent-tanuki-772e37.netlify.app" target="_blank"
-                                        class="ps-3">URL</a>
-                                </li>
-                            </ul>
+                    <div class="feature col">
+                        <div
+                            class=" d-inline-flex align-items-center justify-content-center text-danger-emphasis bg-danger-subtle fs-2 py-2 px-3 rounded-5">
+                            <i class="bi bi-patch-check-fill"></i>
                         </div>
+                        <h3 class="fs-2 text-danger-emphasis my-2 calistoga-regular">Responsabilidad</h3>
+                        <p>Soy responsable porque cumplo mis compromisos, manejo bien el tiempo, mantengo la calidad en
+                            mi
+                            trabajo y soy confiable en cualquier tarea.</p>
                     </div>
 
                 </div>
@@ -167,51 +121,111 @@
         </section>
 
 
-        <div id="myCarousel" class="carousel slide mb-6 carousel-fade carousel-dark" data-bs-theme="dark"
-            data-bs-ride="carousel">
-            <h2 class="text-center my-5">Testimonios</h2>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <article class="container text-center">
-                        <img class="rounded-3" src="imagenes/estratir.png" height="200px" alt="">
-                        <h3 class="my-3">Ángeles Vázquez Pérez Profesora de Estratigrafía</h3>
-                        <p>Tiene muy buenos apuntes cuando sale a campo y el trabajo en equipo se le da bien.</p>
+        <section id="proyectos" class="container-fluid">
+            <div class="container px-4 py-5">
+                <h2 class="pb-2 border-bottom text-center my-5 homemade-apple-regular">Proyectos</h2>
 
-                    </article>
-                </div>
-                <div class="carousel-item">
-                    <article class="container text-center">
-                        <img class="rounded-3" src="imagenes/Duplex1.png" height="200px" alt="">
-                        <h3 class="my-3">Marco Albán Profesor de Geología Estructural</h3>
-                        <p>Trabaja muy bien y se esfuerza mucho, su libreta de campo es muy buena y tiene cosas muy
-                            interesantes que aportar.</p>
+                <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                    <div class="col">
+                        <div id="proyecto-1" class="proyecto card card-cover h-100 overflow-hidden rounded-4 shadow-lg">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold calistoga-regular">Mi primer intento de página</h3>
+                                <ul class="d-flex list-unstyled mt-auto">
+                                    <li class="d-flex align-items-center me-3">
+                                        <i class="bi bi-award-fill text-danger-emphasis"></i>
+                                        <a href="https://astounding-fairy-376490.netlify.app" target="_blank"
+                                            class="ps-3 text-danger-emphasis">URL</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
 
-                    </article>
-                </div>
-                <div class="carousel-item">
-                    <article class="container text-center">
-                        <img class="rounded-3" src="imagenes/topo.webp" height="200px" alt="">
-                        <h3 class="my-3">Alejandra Guzmán Profesora de Geodesia</h3>
-                        <p>Muy buen cuaderno de prácticas, se toma en serio el trabajo en campo y trabaja muy bien en
-                            equipo.</p>
+                    </div>
+                    <div class="col">
+                        <div id="proyecto-2" class="proyecto card card-cover h-100 overflow-hidden rounded-4 shadow-lg">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold calistoga-regular">Página de tema libre</h3>
+                                <ul class="d-flex list-unstyled mt-auto">
+                                    <li class="d-flex align-items-center me-3">
+                                        <i class="bi bi-balloon-heart-fill text-danger-emphasis"></i>
+                                        <a href="https://astonishing-pudding-c412ea.netlify.app/" target="_blank"
+                                            class="ps-3 text-danger-emphasis">URL</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
 
-                    </article>
+                    </div>
+                    <div class="col">
+                        <div id="proyecto-3" class="proyecto card card-cover h-100 overflow-hidden rounded-4 shadow-lg">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold calistoga-regular">Clon de Google</h3>
+                                <ul class="d-flex list-unstyled mt-auto">
+                                    <li class="d-flex align-items-center me-3">
+                                        <i class="bi bi-google text-danger-emphasis"></i>
+                                        <a href="https://preeminent-tanuki-772e37.netlify.app" target="_blank"
+                                            class="ps-3 text-danger-emphasis">URL</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
+        </section>
+
+
+        <section id="testimonios" class="container-fluid">
+            <h2 class="text-center homemade-apple-regular">Testimonios</h2>
+            <div id="myCarousel" class="carousel slide mb-6 carousel-fade carousel-dark" data-bs-theme="dark"
+                data-bs-ride="carousel">
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <article class="container text-center">
+                            <img class="rounded-3" src="imagenes/estratir.png" height="200px" alt="">
+                            <h3 class="my-3 calistoga-regular">Ángeles Vázquez Pérez Profesora de Estratigrafía</h3>
+                            <p>Tiene muy buenos apuntes cuando sale a campo y el trabajo en equipo se le da bien.</p>
+
+                        </article>
+                    </div>
+                    <div class="carousel-item">
+                        <article class="container text-center">
+                            <img class="rounded-3" src="imagenes/Duplex1.png" height="200px" alt="">
+                            <h3 class="my-3 calistoga-regular">Marco Albán Profesor de Geología Estructural</h3>
+                            <p>Trabaja muy bien y se esfuerza mucho, su libreta de campo es muy buena y tiene cosas muy
+                                interesantes que aportar.</p>
+
+                        </article>
+                    </div>
+                    <div class="carousel-item">
+                        <article class="container text-center">
+                            <img class="rounded-3" src="imagenes/topo.webp" height="200px" alt="">
+                            <h3 class="my-3 calistoga-regular">Alejandra Guzmán Profesora de Geodesia</h3>
+                            <p>Muy buen cuaderno de prácticas, se toma en serio el trabajo en campo y trabaja muy bien
+                                en
+                                equipo.</p>
+
+                        </article>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
 
     </main>
 
-    <footer class="py-3 mt-5 bg-danger-subtle" id="contactos" data-bs-theme="dark">
-        <h5 class="text-center my-5 text-danger-emphasis">"Si lo puedes soñar lo puedes lograr" Walt Disney</h5>
+    <footer class="py-3 bg-danger-subtle" id="contactos" data-bs-theme="dark">
+        <h5 id="frase" class="text-center my-5 text-danger-emphasis">"Si lo puedes soñar lo puedes lograr" Walt Disney</h5>
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
             <li class="nav-item">
                 <a href="https://github.com/elizabeth820" target="_blank" class="nav-link px-2">
@@ -245,6 +259,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
